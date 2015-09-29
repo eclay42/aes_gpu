@@ -1,0 +1,7 @@
+GPU-Accelerated AES ECB Encryption
+
+This project consists of two files: aes_gpu.cu and aes_nogpu.c.
+aes_nogpu.c is the CPU baseline. It's a simple, naive implementation that only uses standard CPU math instructions and no threading. No special accelerated AES instructions are used.
+aes_gpu.cu is a parallelized version of the same code implemented using CUDA.
+
+Compilation: Both files can be easily compiled with default compiler flags, hence no makefile is provided.
